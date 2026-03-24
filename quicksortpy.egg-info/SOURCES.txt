@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+quicksortpy/__init__.py
+quicksortpy/quick_sort.py
+quicksortpy.egg-info/PKG-INFO
+quicksortpy.egg-info/SOURCES.txt
+quicksortpy.egg-info/dependency_links.txt
+quicksortpy.egg-info/top_level.txt
