@@ -21,9 +21,9 @@ def sort(arr, new_arr=False, low=0, high=None):
         if new_arr:
             sorted_arr = arr
             pivot_idx = partition(sorted_arr, low, high)
-            sort(sorted_arr, pivot_idx + 1, high)
-            sort(sorted_arr, low, pivot_idx - 1)
+            sort(sorted_arr, False, pivot_idx + 1, high)
+            sort(sorted_arr, False, low, pivot_idx - 1)
         else:
             pivot_idx = partition(arr, low, high)
-            sort(arr, pivot_idx + 1, high)
-            sort(arr, low, pivot_idx - 1)
+            sort(arr, False, pivot_idx + 1, high)
+            sort(arr, False, low, pivot_idx - 1)
