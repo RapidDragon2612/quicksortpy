@@ -1,8 +1,11 @@
 Metadata-Version: 2.4
 Name: quicksortpy
-Version: 0.1.0
+Version: 0.1.1
 Summary: A simple quicksort implementation
 Author: RapidDragon2612
+Project-URL: Homepage, https://github.com/RapidDragon2612/quicksortpy
+Project-URL: Source, https://github.com/RapidDragon2612/quicksortpy
+Project-URL: Issues, https://github.com/RapidDragon2612/quicksortpy/issues
 Requires-Python: >=3.8
 Description-Content-Type: text/markdown
 

@@ -1,6 +1,6 @@
 [project]
 name = "quicksortpy"
-version = "0.1.0"
+version = "0.2.0"
 description = "A simple quicksort implementation"
 readme = "README.md"
 requires-python = ">=3.8"
@@ -11,3 +11,8 @@ authors = [
 [build-system]
 requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
+
+[project.urls]
+Homepage = "https://github.com/RapidDragon2612/quicksortpy"
+Source = "https://github.com/RapidDragon2612/quicksortpy"
+Issues = "https://github.com/RapidDragon2612/quicksortpy/issues"

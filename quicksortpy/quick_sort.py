@@ -13,13 +13,17 @@ def partition(arr, low, high):
     return swap_idx + 1
 
 
-def sort(arr, low=0, high=None):
+def sort(arr, new_arr=False, low=0, high=None):
     if high is None:
         high = len(arr) - 1
 
     if not low >= high:
-        pivot_idx = partition(arr, low, high)
-        sort(arr, pivot_idx + 1, high)
-        sort(arr, low, pivot_idx - 1)
-
-    return arr
+        if new_arr:
+            sorted_arr = arr
+            pivot_idx = partition(sorted_arr, low, high)
+            sort(sorted_arr, pivot_idx + 1, high)
+            sort(sorted_arr, low, pivot_idx - 1)
+        else:
+            pivot_idx = partition(arr, low, high)
+            sort(arr, pivot_idx + 1, high)
+            sort(arr, low, pivot_idx - 1)
