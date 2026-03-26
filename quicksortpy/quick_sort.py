@@ -27,3 +27,21 @@ def sort(arr, new_arr=False, low=0, high=None):
             pivot_idx = partition(arr, low, high)
             sort(arr, False, pivot_idx + 1, high)
             sort(arr, False, low, pivot_idx - 1)
+
+
+def visualize(arr, low=0, high=None):
+    if high is None:
+        high = len(arr) - 1
+
+    if not low >= high:
+        sorted_arr = arr
+        pivot_idx = partition(sorted_arr, low, high)
+        print(sorted_arr)
+        visualize(sorted_arr, pivot_idx + 1, high)
+        print(sorted_arr)
+        visualize(sorted_arr, low, pivot_idx - 1)
+        print(sorted_arr)
+
+
+def visualise(arr, low=0, high=None):
+    visualize(arr)

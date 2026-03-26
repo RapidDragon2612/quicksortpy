@@ -18,3 +18,9 @@ This will sort example_array. If you want to sort it in a new array, type:
 quicksort.sort(example_array, True)
 
 This will create a new array called sorted_arr .
+
+You can also, for educational purposes, use the visualize() or visualise() function:
+
+quicksort.visualize(example_array)
+
+This will display all the steps that the quick sort algorithm took to sort the array.
