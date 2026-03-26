@@ -44,4 +44,4 @@ def visualize(arr, low=0, high=None):
 
 
 def visualise(arr, low=0, high=None):
-    visualize(arr)
+    visualize(arr, low=0, high=None)
