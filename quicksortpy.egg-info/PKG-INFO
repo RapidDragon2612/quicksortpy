@@ -1,6 +1,6 @@
 Metadata-Version: 2.4
 Name: quicksortpy
-Version: 1.0.1
+Version: 1.0.2
 Summary: A simple quicksort implementation
 Author: RapidDragon2612
 Project-URL: Homepage, https://github.com/RapidDragon2612/quicksortpy
@@ -9,29 +9,72 @@ Project-URL: Issues, https://github.com/RapidDragon2612/quicksortpy/issues
 Requires-Python: >=3.8
 Description-Content-Type: text/markdown
 
-The QuickSortPy library (by RapidDragon2612) is a working python implementation of the quick sort algorithm.
-Quick sort is widely considered to be the fastest and most efficient sorting algorithm.
+# QuickSortPy
 
-To install QuickSortPy, run (in Command Prompt/Terminal):
+**QuickSortPy** (by RapidDragon2612) is a Python implementation of the **Quick Sort** algorithm.
 
+Quick Sort is widely regarded as one of the fastest and most efficient general-purpose sorting algorithms.
+
+---
+
+## Installation
+
+Install QuickSortPy using pip:
+
+```bash
 pip install quicksortpy
+```
 
-To use QuickSortPy, run (in your python file):
+---
 
+## Usage
+
+Import the library in your Python file:
+
+```python
 import quicksortpy
+```
 
-And then use the quicksortpy.sort() function, with the argument of the array which is to be sorted:
+### Sort an array (in-place)
 
+```python
 quicksortpy.sort(example_array)
+```
 
-This will sort example_array. If you want to sort it in a new array, type:
+This will sort `example_array` in place.
 
-quicksort.sort(example_array, True)
+---
 
-This will create a new array called sorted_arr .
+### Sort into a new array
 
-You can also, for educational purposes, use the visualize() or visualise() function:
+```python
+sorted_arr = quicksortpy.sort(example_array, True)
+```
 
-quicksort.visualize(example_array)
+This returns a new sorted array without modifying the original.
 
-This will display all the steps that the quick sort algorithm took to sort the array.
+---
+
+## Visualization
+
+For educational purposes, you can visualize how the Quick Sort algorithm works step by step:
+
+```python
+quicksortpy.visualize(example_array)
+```
+
+or:
+
+```python
+quicksortpy.visualise(example_array)
+```
+
+This will display each step the algorithm takes while sorting the array.
+
+---
+
+## Notes
+
+- The `sort()` function accepts:
+  - `array`: The list to sort  
+  - `new_arr` (optional): Set to `True` to return a new sorted list instead of modifying the original  

@@ -28,6 +28,8 @@ def sort(arr, new_arr=False, low=0, high=None):
             sort(arr, False, pivot_idx + 1, high)
             sort(arr, False, low, pivot_idx - 1)
 
+    return arr
+
 
 def visualize(arr, low=0, high=None):
     if high is None:
