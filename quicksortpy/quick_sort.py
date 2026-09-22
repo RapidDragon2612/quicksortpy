@@ -43,7 +43,3 @@ def visualize(arr, low=0, high=None):
         print(sorted_arr)
         visualize(sorted_arr, low, pivot_idx - 1)
         print(sorted_arr)
-
-
-def visualise(arr, low=0, high=None):
-    visualize(arr, low=0, high=None)

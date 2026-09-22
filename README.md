@@ -52,12 +52,6 @@ For educational purposes, you can visualize how the Quick Sort algorithm works s
 quicksortpy.visualize(example_array)
 ```
 
-or:
-
-```python
-quicksortpy.visualise(example_array)
-```
-
 This will display each step the algorithm takes while sorting the array.
 
 ---

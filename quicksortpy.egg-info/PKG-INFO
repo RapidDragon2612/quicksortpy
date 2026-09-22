@@ -1,6 +1,6 @@
 Metadata-Version: 2.4
 Name: quicksortpy
-Version: 1.0.2
+Version: 1.1
 Summary: A simple quicksort implementation
 Author: RapidDragon2612
 Project-URL: Homepage, https://github.com/RapidDragon2612/quicksortpy
@@ -61,12 +61,6 @@ For educational purposes, you can visualize how the Quick Sort algorithm works s
 
 ```python
 quicksortpy.visualize(example_array)
-```
-
-or:
-
-```python
-quicksortpy.visualise(example_array)
 ```
 
 This will display each step the algorithm takes while sorting the array.
